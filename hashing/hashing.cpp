@@ -19,8 +19,7 @@ int main()
     int t,test;
     cin>>t;
     while(t--)
-    {
-        
+    {        
         cin>>test;
         cout<<hash_array[test]<<endl;        
     }
