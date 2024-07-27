@@ -16,12 +16,12 @@ int main()
     {
         hash_array[arr[i]] += 1;
     }
-    int t, test;
+    int t, test_number;
     cin >> t;
     while (t--)
     {
-        cin >> test;
-        cout << hash_array[test] << endl;
+        cin >> test_number;
+        cout << hash_array[test_number] << endl;
     }
     return 0;
 }
