@@ -21,7 +21,7 @@ int main()
     // }
     // charater hashing for other letters or both uppercase and lowercase
     int hash_array[256]={0};
-    for(int i=0;i<str.length();i++)
+    for(int i=0;i<str.size();i++)
     {
         hash_array[str[i]]++;
     }
