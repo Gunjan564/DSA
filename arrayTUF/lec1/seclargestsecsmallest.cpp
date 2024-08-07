@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {   
     //Brute approach 
-    int i, j, b[2], a[]={3,4,2,1,5}, n = 5;
+    int i, j, b[2], a[]={10,5,10}, n = 3;
     for (i = 0; i < n; i++)
     {
         for (j = 0; j < n; j++)
