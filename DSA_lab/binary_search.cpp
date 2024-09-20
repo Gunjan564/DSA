@@ -12,13 +12,11 @@ int binary_search(int n,int arr[],int k){
         }
         else if(k<arr[m])
         {
-            low=0;
             high=m-1;
         }
         else if(k>arr[m])
         {
             low=m+1;
-            high =n-1;
         }
         if(low>high)
         break;

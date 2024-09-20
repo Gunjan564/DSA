@@ -1,0 +1,1 @@
+{"name":"Local: temp_file","url":"c:\\Users\\hp\\Desktop\\CODE\\DSA\\temp_file.cpp","tests":[{"id":1725545692920,"input":"4\n4\nossu\n2\naa\n6\naddonn\n3\nqwe\n","output":"YES\nNO\nYES\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hp\\Desktop\\CODE\\DSA\\temp_file.cpp","group":"local","local":true}
