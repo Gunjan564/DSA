@@ -1,33 +1,54 @@
-#include<iostream>
+
+#include <iostream>
+#include <bits/stdc++.h>
+
 using namespace std;
+
 int main()
 {
     int t;
-    cin>>t;
-    int i=1;
-    while(i<=t)
+    cin >> t;
+    while (t > 0)
     {
-        int n;
-        cin>>n;
-        string str;
-        cin>>str;
-        int j=1;
-        bool ans=true;
-        for(;j<n;)
+        int row;
+        cin >> row;
+        int col;
+        cin >> col;
+        int arr[row][col];
+        for (int i = 0; i < row; i++)
         {
-                if(str[j]!=str[j+1])
+            for (int j = 0; j < col; j++)
+            {
+                cin >> arr[i][j];
+            }
+        }
+        map<int,int> swapping ;
+        map<int,int> no_swap;
+        vector<int> swap_arr;
+        for (int i = 0; i < row; i++)
+        {
+            for (int j = 0; j < col-1; j++)
+            {
+                
+                if (arr[i][j] > arr[i][j + 1])
                 {
-                    ans=false;
-                    break;
+                    
+                    swap_arr.push_back(j);
+                    swapping[j]++;
                 }
-            j+=3;
+                else if(arr[i][j] < arr[i][j + 1])
+                {
+                    no_swap[j]++;
+                }
+                if(j==col-2&&arr[i][j] > arr[i][j + 1])
+                {
+                    cout<<col-1;
+                }
+            }
         }
-        if(ans==true)
-        {
-            cout<<"YES"<<endl;
-        }
-        else cout<<"NO"<<endl;
-        i++;
+        swap(swap_arr.begin(),swap_arr.end());
+        cout<<swap_arr;
+        t--;
     }
-return 0;
+    return 0;
 }
